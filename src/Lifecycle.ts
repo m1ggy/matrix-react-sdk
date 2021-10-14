@@ -104,7 +104,7 @@ interface ILoadSessionOpts {
  */
 export async function loadSession(opts: ILoadSessionOpts = {}): Promise<boolean> {
     try {
-        let enableGuest = opts.enableGuest || false;
+        let enableGuest = true;
         const guestHsUrl = opts.guestHsUrl;
         const guestIsUrl = opts.guestIsUrl;
         const fragmentQueryParams = opts.fragmentQueryParams || {};
