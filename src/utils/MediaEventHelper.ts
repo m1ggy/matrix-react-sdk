@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { MatrixEvent } from "matrix-js-sdk/src";
+import { MatrixEvent } from "matrix-js-sdk";
 import { LazyValue } from "./LazyValue";
 import { Media, mediaFromContent } from "../customisations/Media";
 import { decryptFile } from "./DecryptFile";

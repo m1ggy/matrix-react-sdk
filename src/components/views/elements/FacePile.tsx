@@ -22,7 +22,7 @@ import { sortBy } from "lodash";
 import MemberAvatar from "../avatars/MemberAvatar";
 import { _t } from "../../../languageHandler";
 import DMRoomMap from "../../../utils/DMRoomMap";
-import TextWithTooltip from "../elements/TextWithTooltip";
+import TextWithTooltip from "./TextWithTooltip";
 import { useRoomMembers } from "../../../hooks/useRoomMembers";
 import MatrixClientContext from "../../../contexts/MatrixClientContext";
 

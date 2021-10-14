@@ -30,7 +30,7 @@ import {
     replaceRangeAndMoveCaret,
 } from '../../../editor/operations';
 import { getCaretOffsetAndText, getRangeForSelection } from '../../../editor/dom';
-import Autocomplete, { generateCompletionDomId } from '../rooms/Autocomplete';
+import Autocomplete, { generateCompletionDomId } from './Autocomplete';
 import { getAutoCompleteCreator, Type } from '../../../editor/parts';
 import { parseEvent, parsePlainTextMessage } from '../../../editor/deserialize';
 import { renderModel } from '../../../editor/render';

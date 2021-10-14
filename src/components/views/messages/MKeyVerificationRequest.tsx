@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 import React from 'react';
-import { MatrixEvent } from 'matrix-js-sdk/src';
+import { MatrixEvent } from 'matrix-js-sdk';
 import { MatrixClientPeg } from '../../../MatrixClientPeg';
 import { _t } from '../../../languageHandler';
 import { getNameForEventRoom, userLabelForEventRoom }

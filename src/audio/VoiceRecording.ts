@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 import * as Recorder from 'opus-recorder';
-import encoderPath from 'opus-recorder/dist/encoderWorker.min.js';
+import encoderPath from 'opus-recorder/dist/encoderWorker.min';
 import { MatrixClient } from "matrix-js-sdk/src/client";
 import MediaDeviceHandler from "../MediaDeviceHandler";
 import { SimpleObservable } from "matrix-widget-api";

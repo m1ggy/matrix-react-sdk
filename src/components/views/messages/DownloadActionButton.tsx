@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { MatrixEvent } from "matrix-js-sdk/src";
+import { MatrixEvent } from "matrix-js-sdk";
 import { MediaEventHelper } from "../../../utils/MediaEventHelper";
 import React from "react";
 import { RovingAccessibleTooltipButton } from "../../../accessibility/RovingTabIndex";

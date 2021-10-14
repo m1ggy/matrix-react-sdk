@@ -15,8 +15,8 @@ limitations under the License.
 */
 
 import React from 'react';
-import SpellCheckLanguagesDropdown from "../../../components/views/elements/SpellCheckLanguagesDropdown";
-import AccessibleButton from "../../../components/views/elements/AccessibleButton";
+import SpellCheckLanguagesDropdown from "../elements/SpellCheckLanguagesDropdown";
+import AccessibleButton from "../elements/AccessibleButton";
 import { _t } from "../../../languageHandler";
 import { replaceableComponent } from "../../../utils/replaceableComponent";
 

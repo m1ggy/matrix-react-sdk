@@ -32,7 +32,7 @@ import { BreadcrumbsStore } from "../../stores/BreadcrumbsStore";
 import { UPDATE_EVENT } from "../../stores/AsyncStore";
 import ResizeNotifier from "../../utils/ResizeNotifier";
 import RoomListStore, { LISTS_UPDATE_EVENT } from "../../stores/room-list/RoomListStore";
-import IndicatorScrollbar from "../structures/IndicatorScrollbar";
+import IndicatorScrollbar from "./IndicatorScrollbar";
 import AccessibleTooltipButton from "../views/elements/AccessibleTooltipButton";
 import RoomListNumResults from "../views/rooms/RoomListNumResults";
 import LeftPanelWidget from "./LeftPanelWidget";
@@ -392,7 +392,7 @@ export default class LeftPanel extends React.Component<IProps, IState> {
                     onSelectRoom={this.selectRoom}
                 />
 
-                { dialPadButton }
+                {dialPadButton}
 
                 <AccessibleTooltipButton
                     className={classNames("mx_LeftPanel_exploreButton", {
@@ -432,9 +432,9 @@ export default class LeftPanel extends React.Component<IProps, IState> {
         return (
             <div className={containerClasses} ref={this.ref}>
                 <aside className="mx_LeftPanel_roomListContainer">
-                    { this.renderHeader() }
-                    { this.renderSearchDialExplore() }
-                    { this.renderBreadcrumbs() }
+                    {this.renderHeader()}
+                    {this.renderSearchDialExplore()}
+                    {this.renderBreadcrumbs()}
                     <RoomListNumResults onVisibilityChange={this.refreshStickyHeaders} />
                     <div className="mx_LeftPanel_roomListWrapper">
                         <div
@@ -444,10 +444,10 @@ export default class LeftPanel extends React.Component<IProps, IState> {
                             // overflow:scroll;, so force it out of tab order.
                             tabIndex={-1}
                         >
-                            { roomList }
+                            {roomList}
                         </div>
                     </div>
-                    { !this.props.isMinimized && <LeftPanelWidget /> }
+                    {!this.props.isMinimized && <LeftPanelWidget />}
                 </aside>
             </div>
         );

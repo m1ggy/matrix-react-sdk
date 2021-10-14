@@ -22,8 +22,8 @@ import { useDispatcher } from "../../../hooks/useDispatcher";
 import dis from "../../../dispatcher/dispatcher";
 import { Action } from "../../../dispatcher/actions";
 import { _t } from "../../../languageHandler";
-import InlineSpinner from "../../../components/views/elements/InlineSpinner";
-import AccessibleButton from "../../../components/views/elements/AccessibleButton";
+import InlineSpinner from "../elements/InlineSpinner";
+import AccessibleButton from "../elements/AccessibleButton";
 import { CheckUpdatesPayload } from "../../../dispatcher/payloads/CheckUpdatesPayload";
 
 function installUpdate() {

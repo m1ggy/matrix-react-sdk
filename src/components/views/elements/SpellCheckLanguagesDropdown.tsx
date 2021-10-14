@@ -16,7 +16,7 @@ limitations under the License.
 
 import React from 'react';
 
-import Dropdown from "../../views/elements/Dropdown";
+import Dropdown from "./Dropdown";
 import PlatformPeg from "../../../PlatformPeg";
 import SettingsStore from "../../../settings/SettingsStore";
 import { _t } from "../../../languageHandler";

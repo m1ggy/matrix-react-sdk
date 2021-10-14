@@ -20,7 +20,7 @@ limitations under the License.
  */
 
 import PlatformPeg from "../PlatformPeg";
-import EventIndex from "../indexing/EventIndex";
+import EventIndex from "./EventIndex";
 import { MatrixClientPeg } from "../MatrixClientPeg";
 import SettingsStore from '../settings/SettingsStore';
 import { SettingLevel } from "../settings/SettingLevel";

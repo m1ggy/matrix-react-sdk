@@ -31,7 +31,7 @@ import Field from "../elements/Field";
 import RoomAliasField from "../elements/RoomAliasField";
 import LabelledToggleSwitch from "../elements/LabelledToggleSwitch";
 import DialogButtons from "../elements/DialogButtons";
-import BaseDialog from "../dialogs/BaseDialog";
+import BaseDialog from "./BaseDialog";
 import SpaceStore from "../../../stores/SpaceStore";
 import JoinRuleDropdown from "../elements/JoinRuleDropdown";
 

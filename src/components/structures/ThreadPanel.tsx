@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 import React from 'react';
-import { MatrixEvent, Room } from 'matrix-js-sdk/src';
+import { MatrixEvent, Room } from 'matrix-js-sdk';
 import { Thread, ThreadEvent } from 'matrix-js-sdk/src/models/thread';
 
 import BaseCard from "../views/right_panel/BaseCard";

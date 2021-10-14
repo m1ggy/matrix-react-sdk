@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 import React from 'react';
-import { MatrixEvent } from 'matrix-js-sdk/src';
+import { MatrixEvent } from 'matrix-js-sdk';
 import classNames from 'classnames';
 import { replaceableComponent } from "../../../utils/replaceableComponent";
 import { MatrixClientPeg } from "../../../MatrixClientPeg";

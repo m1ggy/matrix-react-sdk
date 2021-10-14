@@ -18,8 +18,8 @@ import { SAMPLE_RATE } from "./VoiceRecording";
 
 // @ts-ignore - we know that this is not a module. We're looking for a path.
 import decoderWasmPath from 'opus-recorder/dist/decoderWorker.min.wasm';
-import wavEncoderPath from 'opus-recorder/dist/waveWorker.min.js';
-import decoderPath from 'opus-recorder/dist/decoderWorker.min.js';
+import wavEncoderPath from 'opus-recorder/dist/waveWorker.min';
+import decoderPath from 'opus-recorder/dist/decoderWorker.min';
 
 import { logger } from "matrix-js-sdk/src/logger";
 

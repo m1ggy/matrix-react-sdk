@@ -20,7 +20,7 @@ import { JoinRule } from "matrix-js-sdk/src/@types/partials";
 
 import { _t } from '../../../languageHandler';
 import DialogButtons from "../elements/DialogButtons";
-import BaseDialog from "../dialogs/BaseDialog";
+import BaseDialog from "./BaseDialog";
 import SpaceStore from "../../../stores/SpaceStore";
 import AutoHideScrollbar from "../../structures/AutoHideScrollbar";
 import { Entry } from "./AddExistingToSpaceDialog";

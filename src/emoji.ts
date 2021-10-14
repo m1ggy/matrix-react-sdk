@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import EMOJIBASE from 'emojibase-data/en/compact.json';
-import SHORTCODES from 'emojibase-data/en/shortcodes/iamcal.json';
+import EMOJIBASE from 'emojibase-data/en/compact';
+import SHORTCODES from 'emojibase-data/en/shortcodes/iamcal';
 
 export interface IEmoji {
     annotation: string;

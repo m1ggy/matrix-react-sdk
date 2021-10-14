@@ -32,7 +32,7 @@ import { replaceableComponent } from "../../../utils/replaceableComponent";
 import Modal from '../../../Modal';
 import InfoDialog from "../dialogs/InfoDialog";
 import { throttle } from 'lodash';
-import { MatrixEvent, Room, RoomState } from 'matrix-js-sdk/src';
+import { MatrixEvent, Room, RoomState } from 'matrix-js-sdk';
 import { E2EStatus } from '../../../utils/ShieldUtils';
 import { IOOBData } from '../../../stores/ThreepidInviteStore';
 import { SearchScope } from './SearchBar';

@@ -16,7 +16,7 @@ limitations under the License.
 */
 
 import React, { forwardRef } from "react";
-import { MatrixEvent } from "matrix-js-sdk/src";
+import { MatrixEvent } from "matrix-js-sdk";
 
 interface IProps {
     mxEvent: MatrixEvent;

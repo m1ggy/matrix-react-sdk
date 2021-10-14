@@ -292,7 +292,7 @@ export default class RoomDirectory extends React.Component<IProps, IState> {
                 loading: false,
                 error: (
                     _t('%(brand)s failed to get the public room list.', { brand }) +
-                    (err && err.message) ? err.message : _t('The homeserver may be unavailable or overloaded.')
+                        (err && err.message) ? err.message : _t('The homeserver may be unavailable or overloaded.')
                 ),
             });
         });
@@ -552,20 +552,20 @@ export default class RoomDirectory extends React.Component<IProps, IState> {
         if (!hasJoinedRoom && (room.world_readable || isGuest)) {
             previewButton = (
                 <AccessibleButton kind="secondary" onClick={(ev) => this.onPreviewClick(ev, room)}>
-                    { _t("Preview") }
+                    {_t("Preview")}
                 </AccessibleButton>
             );
         }
         if (hasJoinedRoom) {
             joinOrViewButton = (
                 <AccessibleButton kind="secondary" onClick={(ev) => this.onViewClick(ev, room)}>
-                    { _t("View") }
+                    {_t("View")}
                 </AccessibleButton>
             );
         } else if (!isGuest) {
             joinOrViewButton = (
                 <AccessibleButton kind="primary" onClick={(ev) => this.onJoinClick(ev, room)}>
-                    { _t("Join") }
+                    {_t("Join")}
                 </AccessibleButton>
             );
         }
@@ -611,7 +611,7 @@ export default class RoomDirectory extends React.Component<IProps, IState> {
                     className="mx_RoomDirectory_name"
                     onMouseDown={(ev) => this.onRoomClicked(room, ev)}
                 >
-                    { name }
+                    {name}
                 </div>&nbsp;
                 <div
                     className="mx_RoomDirectory_topic"
@@ -622,7 +622,7 @@ export default class RoomDirectory extends React.Component<IProps, IState> {
                     className="mx_RoomDirectory_alias"
                     onMouseDown={(ev) => this.onRoomClicked(room, ev)}
                 >
-                    { getDisplayAliasForRoom(room) }
+                    {getDisplayAliasForRoom(room)}
                 </div>
             </div>,
             <div
@@ -630,7 +630,7 @@ export default class RoomDirectory extends React.Component<IProps, IState> {
                 onMouseDown={(ev) => this.onRoomClicked(room, ev)}
                 className="mx_RoomDirectory_roomMemberCount"
             >
-                { room.num_joined_members }
+                {room.num_joined_members}
             </div>,
             <div
                 key={`${room.room_id}_preview`}
@@ -638,14 +638,14 @@ export default class RoomDirectory extends React.Component<IProps, IState> {
                 // cancel onMouseDown otherwise shift-clicking highlights text
                 className="mx_RoomDirectory_preview"
             >
-                { previewButton }
+                {previewButton}
             </div>,
             <div
                 key={`${room.room_id}_join`}
                 onMouseDown={(ev) => this.onRoomClicked(room, ev)}
                 className="mx_RoomDirectory_join"
             >
-                { joinOrViewButton }
+                {joinOrViewButton}
             </div>,
         ];
     }
@@ -701,7 +701,7 @@ export default class RoomDirectory extends React.Component<IProps, IState> {
             const createNewButton = <>
                 <hr />
                 <AccessibleButton kind="primary" onClick={this.onCreateRoomClick} className="mx_RoomDirectory_newRoom">
-                    { _t("Create new room") }
+                    {_t("Create new room")}
                 </AccessibleButton>
             </>;
 
@@ -709,16 +709,16 @@ export default class RoomDirectory extends React.Component<IProps, IState> {
             let footer;
             if (cells.length === 0 && !this.state.loading) {
                 footer = <>
-                    <h5>{ _t('No results for "%(query)s"', { query: this.state.filterString.trim() }) }</h5>
+                    <h5>{_t('No results for "%(query)s"', { query: this.state.filterString.trim() })}</h5>
                     <p>
-                        { _t("Try different words or check for typos. " +
-                            "Some results may not be visible as they're private and you need an invite to join them.") }
+                        {_t("Try different words or check for typos. " +
+                            "Some results may not be visible as they're private and you need an invite to join them.")}
                     </p>
-                    { createNewButton }
+                    {createNewButton}
                 </>;
             } else {
                 scrollPanelContent = <div className="mx_RoomDirectory_table">
-                    { cells }
+                    {cells}
                 </div>;
                 if (!this.state.loading && !this.nextBatch) {
                     footer = createNewButton;
@@ -730,11 +730,11 @@ export default class RoomDirectory extends React.Component<IProps, IState> {
                 stickyBottom={false}
                 startAtBottom={false}
             >
-                { scrollPanelContent }
-                { spinner }
-                { footer && <div className="mx_RoomDirectory_footer">
-                    { footer }
-                </div> }
+                {scrollPanelContent}
+                {spinner}
+                {footer && <div className="mx_RoomDirectory_footer">
+                    {footer}
+                </div>}
             </ScrollPanel>;
         }
 
@@ -796,16 +796,18 @@ export default class RoomDirectory extends React.Component<IProps, IState> {
                     showJoinButton={showJoinButton}
                     initialText={this.props.initialText}
                 />
-                { dropdown }
+                {dropdown}
             </div>;
         }
         const explanation =
             _t("If you can't find the room you're looking for, ask for an invite or <a>Create a new room</a>.", null,
-                { a: sub => (
-                    <AccessibleButton kind="secondary" onClick={this.onCreateRoomClick}>
-                        { sub }
-                    </AccessibleButton>
-                ) },
+                {
+                    a: sub => (
+                        <AccessibleButton kind="secondary" onClick={this.onCreateRoomClick}>
+                            {sub}
+                        </AccessibleButton>
+                    )
+                },
             );
 
         const title = this.state.selectedCommunityId
@@ -820,10 +822,11 @@ export default class RoomDirectory extends React.Component<IProps, IState> {
                 title={title}
             >
                 <div className="mx_RoomDirectory">
-                    { explanation }
+                    {explanation}
+
                     <div className="mx_RoomDirectory_list">
-                        { listHeader }
-                        { content }
+                        {listHeader}
+                        {content}
                     </div>
                 </div>
             </BaseDialog>

@@ -23,7 +23,7 @@ import { Room } from "matrix-js-sdk/src/models/room";
 import classNames from 'classnames';
 import { RovingAccessibleButton, RovingTabIndexWrapper } from "../../../accessibility/RovingTabIndex";
 import { _t } from "../../../languageHandler";
-import AccessibleButton from "../../views/elements/AccessibleButton";
+import AccessibleButton from "../elements/AccessibleButton";
 import RoomTile from "./RoomTile";
 import { ListLayout } from "../../../stores/room-list/ListLayout";
 import {
