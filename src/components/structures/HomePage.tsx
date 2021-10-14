@@ -105,17 +105,17 @@ const HomePage: React.FC<IProps> = ({ justRegistered = false }) => {
     if (justRegistered) {
         introSection = <UserWelcomeTop />;
     } else {
-        const brandingConfig = config.branding;
+        // const brandingConfig = config.branding;
 
         let logoUrl = "themes/element/img/logos/reachLogo.png";
-        if (brandingConfig && brandingConfig.authHeaderLogoUrl) {
-            logoUrl = brandingConfig.authHeaderLogoUrl;
-        }
+        // if (brandingConfig && brandingConfig.authHeaderLogoUrl) {
+        //     logoUrl = brandingConfig.authHeaderLogoUrl;
+        // }
 
         introSection = <React.Fragment>
             <img src={logoUrl} alt={config.brand} />
             <h1>Welcome to Reach</h1>
-            {/* <h4>{ _t("Liberate your communication") }</h4> */}
+            <h4>{ _t("Liberate your communication") }</h4>
         </React.Fragment>;
     }
 
