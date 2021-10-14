@@ -89,8 +89,7 @@ export interface IOpts {
 export default async function createRoom(opts: IOpts): Promise<string | null> {
     opts = opts || {};
     if (opts.spinner === undefined) opts.spinner = true;
-    ///allow guest access for created rooms
-   opts.guestAccess = true;
+    if (opts.guestAccess === undefined) opts.guestAccess = true;
     if (opts.encryption === undefined) opts.encryption = false;
 
     const startTime = CountlyAnalytics.getTimestamp();
