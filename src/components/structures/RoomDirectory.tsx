@@ -555,6 +555,11 @@ export default class RoomDirectory extends React.Component<IProps, IState> {
                     { _t("Preview") }
                 </AccessibleButton>
             );
+            joinOrViewButton = (
+                <AccessibleButton kind="primary" onClick={(ev) => this.onJoinClick(ev, room)}>
+                    { _t("Join") }
+                </AccessibleButton>
+            );
         }
         if (hasJoinedRoom) {
             joinOrViewButton = (
