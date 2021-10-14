@@ -86,8 +86,8 @@ const UserWelcomeTop = () => {
             />
         </MiniAvatarUploader>
 
-        <h1>{ _t("Welcome %(name)s", { name: ownProfile.displayName }) }</h1>
-        <h4>{ _t("Now, let's help you get started") }</h4>
+        <h1>{_t("Welcome %(name)s", { name: ownProfile.displayName })}</h1>
+        <h4>{_t("Now, let's help you get started")}</h4>
     </div>;
 };
 
@@ -106,30 +106,31 @@ const HomePage: React.FC<IProps> = ({ justRegistered = false }) => {
         introSection = <UserWelcomeTop />;
     } else {
         const brandingConfig = config.branding;
-        let logoUrl = "themes/element/img/logos/element-logo.svg";
+
+        let logoUrl = "themes/element/img/logos/reachLogo.png";
         if (brandingConfig && brandingConfig.authHeaderLogoUrl) {
             logoUrl = brandingConfig.authHeaderLogoUrl;
         }
 
         introSection = <React.Fragment>
             <img src={logoUrl} alt={config.brand} />
-            <h1>{ _t("Welcome to %(appName)s", { appName: config.brand }) }</h1>
-            <h4>{ _t("Liberate your communication") }</h4>
+            <h1>Welcome to Reach</h1>
+            {/* <h4>{ _t("Liberate your communication") }</h4> */}
         </React.Fragment>;
     }
 
     return <AutoHideScrollbar className="mx_HomePage mx_HomePage_default">
         <div className="mx_HomePage_default_wrapper">
-            { introSection }
+            {introSection}
             <div className="mx_HomePage_default_buttons">
                 <AccessibleButton onClick={onClickSendDm} className="mx_HomePage_button_sendDm">
-                    { _t("Send a Direct Message") }
+                    {_t("Send a Direct Message")}
                 </AccessibleButton>
                 <AccessibleButton onClick={onClickExplore} className="mx_HomePage_button_explore">
-                    { _t("Explore Public Rooms") }
+                    {_t("Explore Public Rooms")}
                 </AccessibleButton>
                 <AccessibleButton onClick={onClickNewRoom} className="mx_HomePage_button_createGroup">
-                    { _t("Create a Group Chat") }
+                    {_t("Create a Group Chat")}
                 </AccessibleButton>
             </div>
         </div>
