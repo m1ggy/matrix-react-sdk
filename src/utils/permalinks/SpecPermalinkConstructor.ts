@@ -32,7 +32,7 @@ export default class SpecPermalinkConstructor extends PermalinkConstructor {
     }
 
     forRoom(roomIdOrAlias: string, serverCandidates: string[]): string {
-        return `${baseUrl}/#/${roomIdOrAlias}${this.encodeServerCandidates(serverCandidates)}`;
+        return `${baseUrl}/#/room/${roomIdOrAlias}${this.encodeServerCandidates(serverCandidates)}`;
     }
 
     forUser(userId: string): string {
