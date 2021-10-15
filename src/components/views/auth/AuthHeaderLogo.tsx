@@ -21,7 +21,7 @@ import { replaceableComponent } from "../../../utils/replaceableComponent";
 export default class AuthHeaderLogo extends React.PureComponent {
     public render(): React.ReactNode {
         return <div className="mx_AuthHeaderLogo">
-            Matrix
+            Reach
         </div>;
     }
 }
