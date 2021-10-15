@@ -86,7 +86,7 @@ const ServerPicker = ({ title, dialogTitle, serverConfig, onServerConfigChange }
         <AccessibleButton className="mx_ServerPicker_help" onClick={onHelpClick} />
         <span className="mx_ServerPicker_server">{ serverName }</span>
         { editBtn }
-        { desc }
+        {/* { desc } */}
     </div>;
 };
 
